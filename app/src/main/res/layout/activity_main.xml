@@ -10,21 +10,26 @@
         android:id="@+id/addBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:backgroundTint="#2196F3"
-        android:onClick="addOne"
         android:text="+1"
+        app:layout_constraintBottom_toBottomOf="@+id/valTxt"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/valTxt"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintTop_toTopOf="@+id/valTxt" />
 
     <Button
         android:id="@+id/minusBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#2196F3"
-        android:onClick="minusOne"
         android:text="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/valTxt"
         app:layout_constraintEnd_toStartOf="@+id/valTxt"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valTxt" />
 
     <EditText
         android:id="@+id/valTxt"
